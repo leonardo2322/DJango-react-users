@@ -53,6 +53,7 @@ PROJECTS_APPS =[
 THIRD_PARTY_APPS = [
     'rest_framework',
     'corsheaders',
+    'phonenumber_field'
 
 ]
 INSTALLED_APPS = DJANGO_APPS + PROJECTS_APPS + THIRD_PARTY_APPS
@@ -179,3 +180,5 @@ CORS_ALLOWED_ORIGINS = [
 ]
 CORS_ALLOW_ALL_ORIGINS= True
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTH_USER_MODEL = 'Users.UserProfile'
